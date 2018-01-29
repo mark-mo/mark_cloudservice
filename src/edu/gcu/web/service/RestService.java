@@ -44,14 +44,14 @@ public class RestService
     @GET
     @Path("/test")
     @Produces("application/json")
-    public ResponseModel test()
+    public String test()
     {
     	// Log the API call
     	logger.info("Entering RestService.test()");
     	
     	// Return a Test Response
     	ResponseModel response = new ResponseModel(0, "This is a test");
-    	return response;
+    	return "hello";
     }
     
     /**
