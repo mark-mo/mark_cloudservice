@@ -15,7 +15,7 @@ import com.mark.model.ResponseModel;
  * @author markreha
  * @version $Revision$
  */
-@Path("weather")
+@Path("/weather")
 public class RestService
 {
 //    Logger logger = LoggerFactory.getLogger(RestService.class);
@@ -29,14 +29,14 @@ public class RestService
     @GET
     @Path("/test")
     @Produces("application/json")
-    public ResponseModel test()
+    public String test()
     {
     	// Log the API call
     	//logger.info("Entering RestService.test()");
     	
     	// Return a Test Response
     	ResponseModel response = new ResponseModel(0, "This is a test");
-    	return response;
+    	return "working...";
     }
     
     /**
