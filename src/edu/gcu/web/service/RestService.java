@@ -30,7 +30,7 @@ import edu.gcu.exceptions.NotFoundException;
  * @author markreha
  * @version $Revision$
  */
-@Path("weather")
+@Path("/weather")
 public class RestService
 {
     Logger logger = LoggerFactory.getLogger(RestService.class);
