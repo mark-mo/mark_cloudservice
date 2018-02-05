@@ -1,0 +1,5 @@
+com\mark\model\AccelSensorModel.class
+com\mark\model\ResponseModel.class
+com\mark\rest\RestService.class
+com\mark\model\Move.class
+com\mark\model\ResponseDataModel.class
