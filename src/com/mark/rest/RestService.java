@@ -49,7 +49,7 @@ public class RestService
     @Path("/save")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String saveAccelSensorData(AccelSensorModel model)
+    public AccelSensorModel saveAccelSensorData(AccelSensorModel model)
     {
 		// Log the API call
 //		logger.info("Entering RestService.saveTemperatureSensorData()");
@@ -61,7 +61,7 @@ public class RestService
 		// Return OK Response
 		//ResponseModel response = new ResponseModel(1, "OK");
        		
-		return model.toString();
+		return model;
     }
 
     /**

@@ -13,8 +13,8 @@ public class AccelSensorModel {
 		yaw = 0;
 	}
 
-	public AccelSensorModel(String sensorName, double pitch, double roll, double yaw) {
-		this.sensorName = sensorName;
+	public AccelSensorModel(double pitch, double roll, double yaw) {
+		this.sensorName = "Main";
 		this.pitch = pitch;
 		this.roll = roll;
 		this.yaw = yaw;
