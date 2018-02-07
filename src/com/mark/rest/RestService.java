@@ -51,6 +51,7 @@ public class RestService
     @Produces(MediaType.APPLICATION_JSON)
     public AccelSensorModel saveAccelSensorData(AccelSensorModel model)
     {
+    	model.setSensorName("Main");
 		// Log the API call
 //		logger.info("Entering RestService.saveTemperatureSensorData()");
 //		logger.debug("Model: " + model.toString());
